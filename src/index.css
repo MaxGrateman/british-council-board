@@ -1,0 +1,63 @@
+:root {
+  --clr-accent: rgb(35, 8, 90);
+  --clr-white: #FFFFFF;
+  --clr-crimson: #DD052B;
+
+  --ff-primary: 'Koulen', sans-serif;
+  --ff-secondary: 'Inter', sans-serif;
+
+  --fw-bold: 700;
+
+  --fs-standart: 4em;
+  --fs-small: 2.5em;
+
+  --fs-body: var(--fs-standart);
+  --fs-button: var(--fs-small);
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-primary);
+  color: var(--clr-white);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: var(--fs-button);
+  outline: none;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
