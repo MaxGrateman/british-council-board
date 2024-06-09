@@ -61,3 +61,15 @@ input {
   border: none;
   border-radius: 10px;
 }
+
+textarea {
+  display: inline-block;
+  min-width: 100px;
+  max-width: 100%;
+  height: 80px;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  overflow: hidden;
+}
