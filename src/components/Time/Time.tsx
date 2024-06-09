@@ -2,11 +2,11 @@ import moment from 'moment';
 import {useState, useEffect} from "react";
 
 function Time() {
-    const [currentDate, setCurrentDate] = useState(moment().format('h:mm:ss'));
+    const [currentDate, setCurrentDate] = useState(moment().format('HH:mm:ss'));
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentDate(moment().format('h:mm:ss'));
+            setCurrentDate(moment().format('HH:mm:ss'));
         }, 1000)
 
         return () => clearInterval(interval);
