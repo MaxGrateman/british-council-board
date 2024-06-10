@@ -1,0 +1,15 @@
+.uol_container {
+    color: #000000 !important;
+    padding: 15px;
+}
+
+.uol_attribute {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+.uol_text {
+    color: var(--clr-accent);
+}

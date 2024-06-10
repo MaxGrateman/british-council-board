@@ -5,11 +5,14 @@ import {useState} from "react";
 import Draggable, {DraggableEventHandler} from 'react-draggable';
 
 function PBSession() {
-    const defaultFontSize = 64;
+    const defaultFontSize = 55;
     const [inputValue, setInputValue] = useState(defaultFontSize.toString());
-    const [fontSize, setFontSize] = useState('64');
+    const [fontSize, setFontSize] = useState('55');
     const [activeDrags, setActiveDrags] = useState(0);
     const [deltaPosition, setDeltaPosition] = useState({ x: 0, y: 0 });
+
+    const numericalParse = parseFloat(fontSize);
+    const timerFont = numericalParse * 1.3;
 
     const handleSize = (e: React.ChangeEvent<HTMLInputElement>) => {
         const newSize = e.target.value;
@@ -56,7 +59,7 @@ function PBSession() {
             <div className="pb_container" style={{ fontSize: `${fontSize}px` }}>
                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                     <Draggable {...dragHandlers}>
-                        <div style={{ fontSize: `${fontSize}px`, color: 'var(--clr-crimson)' }}>
+                        <div style={{ fontSize: `${timerFont}px`, color: 'var(--clr-crimson)' }}>
                             <Time />
                         </div>
                     </Draggable>

@@ -65,12 +65,13 @@ input {
 textarea {
   display: inline-block;
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
   min-height: 50px;
-  max-height: 150px;
+  max-height: 130px;
   padding: 0;
   resize: none;
   box-sizing: border-box;
   border: none;
   overflow: hidden;
+  text-align: left;
 }
