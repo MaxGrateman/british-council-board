@@ -32,6 +32,7 @@ body {
 p {
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 a {
@@ -64,6 +65,7 @@ input {
 
 textarea {
   display: inline-block;
+  background: transparent;
   width: 100%;
   max-width: 400px;
   min-height: 50px;
@@ -74,4 +76,9 @@ textarea {
   border: none;
   overflow: hidden;
   text-align: left;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
 }

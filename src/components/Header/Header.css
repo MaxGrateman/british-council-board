@@ -13,7 +13,7 @@
 
     display: grid;
     grid-template-columns: 205px 148px 1fr 1fr;
-    align-items: center
+    align-items: center;
 }
 
 .input-control {

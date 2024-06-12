@@ -1,27 +1,22 @@
 import {useState} from "react";
-import "./../Header.css"
+import "../Header/Header.css"
 import './UOLSession.css'
 import Time from "../Time/Time.tsx";
 import Draggable, {DraggableEventHandler} from 'react-draggable';
+import Header from "../Header/Header.tsx";
 
 function UOLSession() {
-    const defaultFontSize = 55;
-    const [inputValue, setInputValue] = useState(defaultFontSize.toString());
-    const [fontSize, setFontSize] = useState('55');
     const [activeDrags, setActiveDrags] = useState(0);
     const [deltaPosition, setDeltaPosition] = useState({ x: 0, y: 0 });
+    const [fontSize, setFontSize] = useState('55');
+
+    const handleFontSizeChange = (newSize: string) => {
+        setFontSize(newSize);
+    };
 
     const numericalParse = parseFloat(fontSize);
     const timerFont = numericalParse * 1.3;
 
-    const handleSize = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const newSize = e.target.value;
-        setInputValue(newSize);
-        setFontSize(newSize)
-        if (parseInt(newSize) < 117) {
-            return;
-        }
-    }
 
     const handleDrag: DraggableEventHandler = (_e, ui) => {
         const { x, y } = deltaPosition;
@@ -43,20 +38,7 @@ function UOLSession() {
 
     return (
         <>
-            <header className="header">
-                <div className="header_wrapper">
-                    <img src="src/assets/bc-logo-white 1.svg" alt="bc-logo" />
-                    <div></div>
-                    <p>FONT-SIZE:</p>
-                    <input
-                        className="input-control"
-                        type="number"
-                        value={inputValue}
-                        onChange={handleSize}
-                        max="117"
-                    />
-                </div>
-            </header>
+            <Header onFontSizeChange={handleFontSizeChange}/>
             <div className="uol_container" style={{ fontSize: `${fontSize}px` }}>
                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                     <Draggable {...dragHandlers}>
