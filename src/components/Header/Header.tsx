@@ -1,5 +1,6 @@
 import {useState} from "react";
 import './Header.css'
+import BClogo from '../../assets/bc-logo-white 1.svg';
 
 interface HeaderProps {
     onFontSizeChange: (newSize: string) => void;
@@ -20,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ onFontSizeChange }) => {
     return (
         <header className="header">
             <div className="header_wrapper">
-                <img src="src/assets/bc-logo-white 1.svg" alt="bc-logo" />
+                <img src={BClogo} alt="bc-logo" />
                 <div></div>
                 <p>FONT-SIZE:</p>
                 <input
