@@ -14,7 +14,7 @@ function Time() {
 
     return(
         <div>
-            <p>{currentDate}</p>
+            <u>{currentDate}</u>
         </div>
     )
 }

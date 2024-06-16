@@ -1,15 +1,23 @@
 .pb_container {
     color: #000000;
     padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.pb_attribute {
+.pb_container > .pb_attribute {
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    margin-bottom: 15px;
+    gap: 10px;
+    align-items: flex-start
 }
 
 .pb_text {
     color: var(--clr-crimson);
+}
+
+.pb_time-calls_container {
+    display: grid;
+    grid-template-columns: 135px 135px 135px 135px;
+
 }

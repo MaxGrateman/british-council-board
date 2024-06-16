@@ -55,6 +55,8 @@ button {
   cursor: pointer;
   font-size: var(--fs-button);
   outline: none;
+  height: 40px;
+  border-radius: 10px;
 }
 
 input {
@@ -63,20 +65,7 @@ input {
   border-radius: 10px;
 }
 
-textarea {
-  display: inline-block;
-  background: transparent;
-  width: 100%;
-  max-width: 400px;
-  min-height: 50px;
-  max-height: 130px;
-  padding: 0;
-  resize: none;
-  box-sizing: border-box;
-  border: none;
-  overflow: hidden;
-  text-align: left;
-}
+textarea {}
 
 textarea:focus {
   border: none;

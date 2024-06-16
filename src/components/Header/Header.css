@@ -7,12 +7,12 @@
 }
 
 .header_wrapper {
-    width: 600px;
+    width: 1600px;
     height: 100%;
     padding: 0 0 0 55px;
 
     display: grid;
-    grid-template-columns: 205px 148px 1fr 1fr;
+    grid-template-columns: 205px 148px 120px 150px 110px 1fr 120px 150px;
     align-items: center;
 }
 
@@ -21,4 +21,21 @@
     width: 85px;
     text-align: center;
     font-size: 24px;
+}
+
+.header_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header_button {
+    color: #000000;
+    width: 150px;
+    transition: all 200ms ease;
+    font-size: 24px;
+}
+
+.header_button:hover {
+    color: var(--clr-crimson);
 }
