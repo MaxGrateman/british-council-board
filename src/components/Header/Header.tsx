@@ -52,8 +52,6 @@ const Header: React.FC<HeaderProps> = ({ onFontSizeChange, onGridStyleChange, on
                     type="number"
                     value={individualFontSize}
                     onChange={handleIndividualSize}
-                    max="104"
-                    min="20"
                 />
             </div>
         </header>
