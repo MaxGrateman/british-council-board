@@ -105,9 +105,11 @@
   color: inherit;
 }
 
-.left-main_button_img {
+.main_button_img {
   margin-top: 300px;
 }
+
+
 
 @media screen and (max-width: 1640px) {
   .left-main_button {
@@ -116,7 +118,30 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .main_button_img {
+    width: 300px;
+    margin-top: 150px;
+  }
   .right-main_button {
     padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .main_button_img {
+    width: 200px;
+    margin-top: 150px;
+  }
+  .left-main_button {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .button-link {
+    display: none;
+  }
+  .wrapper_container {
+    justify-content: center;
   }
 }
