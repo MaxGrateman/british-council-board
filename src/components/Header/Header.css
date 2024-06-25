@@ -40,3 +40,18 @@
 .header_button:hover {
     color: var(--clr-crimson);
 }
+
+@media screen and (max-width: 1640px) {
+    .header_wrapper {
+        grid-template-columns: 205px 80px 120px 120px 110px 500px 120px 100px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header_wrapper {
+        grid-template-columns: 205px 40px 120px 120px 110px 400px 120px 100px;
+    }
+    .header_button {
+        width: 100px;
+    }
+}
