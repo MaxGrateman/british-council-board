@@ -64,7 +64,7 @@ function UOLSession() {
     };
 
     const numericalParse = parseFloat(fontSize);
-    const timerFont = numericalParse * 3;
+    const timerFont = numericalParse * 2;
 
 
     const handleDrag: DraggableEventHandler = (_e, ui) => {
@@ -102,7 +102,7 @@ function UOLSession() {
                     </Draggable>
                 </div>
                 <Draggable {...dragHandlers}>
-                    <p className="uol_text" style={{ fontSize: `${timerFont}px`, color: 'var(--clr-accent)' }} onClick={handleElementClick}>UOL TEST</p>
+                    <p className="uol_text" style={{ fontSize: `${timerFont}px`, color: 'var(--clr-accent)' }} onClick={handleElementClick}>British Council Kazakhstan</p>
                 </Draggable>
                 <Draggable {...dragHandlers} >
                     <div className="uol_attribute">

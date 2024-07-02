@@ -65,7 +65,7 @@ function PBSession() {
     };
 
     const numericalParse = parseFloat(fontSize);
-    const timerFont = numericalParse * 3;
+    const timerFont = numericalParse * 2;
 
     const handleDrag: DraggableEventHandler = (_e, ui) => {
         const { x, y } = deltaPosition;
@@ -100,7 +100,7 @@ function PBSession() {
                     </Draggable>
                 </div>
                 <Draggable {...dragHandlers}>
-                    <p style={{fontSize: `${timerFont}px`, color: 'var(--clr-crimson)' }} onClick={handleElementClick}>IELTS TEST</p>
+                    <p style={{fontSize: `${timerFont}px`, color: 'var(--clr-crimson)' }} onClick={handleElementClick}>British Council Kazakhstan</p>
                 </Draggable>
                 <Draggable {...dragHandlers} >
                     <div className="pb_attribute">
